@@ -3,9 +3,9 @@
   <div class="tutorial">
     <div>
       <h1>
-        <span @mousemove="fire" @mouseleave="bomb">{{ icon }}</span>
-        WebExpertコース Vue CLI チュートリアル
-        <span @mousemove="fire" @mouseleave="bomb">{{ icon }}</span>
+        <TutorialIcon></TutorialIcon>
+        <slot></slot>
+        <TutorialIcon></TutorialIcon>
       </h1>
       <p>
         Vue CLIでの開発は、new
@@ -17,23 +17,12 @@
 </template>
 
 <script>
-// ❗️ export dafaultを用いてnew Vue({...})に書いてた内容をexportします。決まった書き方として覚えてよいでしょう。❗️
+import TutorialIcon from "./TutorialIcon.vue"
 export default {
-  // ❗️ .vueファイルでは、dataは、data () { return {} }の様に書きます。❗️
-  data() {
-    return {
-      icon: "🧨",
-    }
+  components: {
+    TutorialIcon,
   },
-  // 他の methodsやcomputed等は、new Vueと一緒です。
-  methods: {
-    fire() {
-      this.icon = "🔥"
-    },
-    bomb() {
-      this.icon = "🧨"
-    },
-  },
+  data() {},
 }
 </script>
 
