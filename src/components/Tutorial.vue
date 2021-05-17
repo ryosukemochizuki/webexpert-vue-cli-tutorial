@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import TutorialIcon from "./TutorialIcon.vue"
+import TutorialIcon from "@/components/TutorialIcon"
 export default {
   components: {
     TutorialIcon,

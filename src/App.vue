@@ -10,17 +10,21 @@
       >Webコース Ruby on Railsチュートリアル</Tutorial
     >
     <Counter :initialValue="10"></Counter>
+
+    <Todo />
   </div>
 </template>
 
 <script>
-import Tutorial from "./components/Tutorial.vue"
-import Counter from "./components/Counter.vue"
+import Tutorial from "@/components/Tutorial.vue"
+import Counter from "@/components/Counter.vue"
+import Todo from "@/components/Todo.vue"
 export default {
   name: "App",
   components: {
     Tutorial,
     Counter,
+    Todo,
   },
 }
 </script>
