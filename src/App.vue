@@ -22,6 +22,8 @@
       <Human clothes="👔" />
       <Human clothes="👕" />
     </div>
+
+    <coin-desk />
   </div>
 </template>
 
@@ -31,6 +33,8 @@ import Counter from "@/components/Counter.vue"
 import Todo from "@/components/Todo.vue"
 import SimpleMemo from "@/components/SimpleMemo.vue"
 import Human from "@/components/Human"
+import coinDesk from "@/components/CoinDesk"
+import CoinDesk from "./components/CoinDesk.vue"
 export default {
   name: "App",
   components: {
@@ -39,6 +43,8 @@ export default {
     Todo,
     SimpleMemo,
     Human,
+    coinDesk,
+    CoinDesk,
   },
 }
 </script>
