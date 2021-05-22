@@ -1,5 +1,7 @@
 # Geeksalon WebExpert コース Vue CLI チュートリアル
 
+学習用
+
 ## Project setup
 
 ## (日本語訳) プロジェクトをセットアップするために`git clone`した最初に実行するべきコマンド
