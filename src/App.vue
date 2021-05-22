@@ -1,9 +1,17 @@
 <template>
-  <section></section>
+  <section>
+    <commit />
+  </section>
 </template>
 
 <script>
-export default {}
+import Commit from "./components/Commit.vue"
+
+export default {
+  components: {
+    Commit,
+  },
+}
 </script>
 
 <style></style>
